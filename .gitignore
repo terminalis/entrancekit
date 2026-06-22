@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+*.log
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+examples/**/dist
+examples/**/node_modules
+*.tgz
+# Local AI-agent tooling — never publish to the public repo
+.claude/
+.codex/
+.agents/

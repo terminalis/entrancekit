@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="EntranceKit social preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151922" />
+      <stop offset="1" stop-color="#070a10" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#64b3f4" />
+      <stop offset="1" stop-color="#4fb88a" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="72" y="72" width="1056" height="486" rx="44" fill="#111418" stroke="#2d3441" stroke-width="2" />
+  <g transform="translate(778 148)">
+    <rect x="0" y="0" width="286" height="180" rx="28" fill="#f5f1e7" />
+    <circle cx="110" cy="80" r="40" fill="#46a67e" />
+    <circle cx="184" cy="80" r="40" fill="#d85842" />
+    <rect x="76" y="126" width="134" height="14" rx="7" fill="#111418" />
+  </g>
+  <circle cx="932" cy="414" r="92" fill="url(#accent)" opacity=".18" />
+  <text x="128" y="238" fill="#f7f4ee" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="82" font-weight="800">EntranceKit</text>
+  <text x="132" y="310" fill="#b8c0cc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Turn a PNG or MP4 into a self-contained app entrance.</text>
+  <text x="132" y="386" fill="#f7f4ee" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Upload. Tune. Preview. Copy AppEntrance.tsx.</text>
+</svg>

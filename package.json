@@ -1,0 +1,64 @@
+{
+  "name": "entrancekit",
+  "private": true,
+  "description": "Build a self-contained React app entrance component from a local PNG or MP4 asset.",
+  "keywords": [
+    "react",
+    "animation",
+    "intro",
+    "entrance",
+    "splash",
+    "image",
+    "video",
+    "overlay",
+    "lifecycle",
+    "reduced-motion"
+  ],
+  "license": "MIT",
+  "author": "terminalis",
+  "homepage": "https://terminalis.github.io/entrancekit/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terminalis/entrancekit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/terminalis/entrancekit/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^6.0.2",
+    "@vitest/coverage-v8": "^4.1.8",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.6.0",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.8.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.61.0",
+    "vitest": "^4.1.8"
+  }
+}
