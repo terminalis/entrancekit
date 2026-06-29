@@ -5,16 +5,21 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "npm"
+    directories:            # plural — covers both manifests in one block
+      - "/"
+      - "/website"
     schedule:
       interval: "weekly"
     groups:
-      # Keep react, react-dom and their @types in one PR so a major bump
-      # can't split into mutually-breaking updates (see closed #3/#5).
       react:
         patterns:
           - "react"
           - "react-dom"
           - "@types/react"
           - "@types/react-dom"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"          # Dependabot scans .github/workflows automatically
+    schedule:
+      interval: "weekly"
