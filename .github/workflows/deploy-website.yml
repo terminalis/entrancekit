@@ -27,7 +27,7 @@ jobs:
       - run: npm run build # validate the shared source build
       - run: npm ci --prefix website
       - run: npm run build --prefix website
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: website/dist
 
