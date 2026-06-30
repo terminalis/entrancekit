@@ -1,7 +1,7 @@
 {
   "name": "EntranceKit",
   "short_name": "EntranceKit",
-  "description": "Build a local React app entrance from a PNG or MP4 asset and copy a self-contained AppEntrance component.",
+  "description": "Build a local React app entrance from an MP4 or PNG asset and copy a self-contained AppEntrance component.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

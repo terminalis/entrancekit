@@ -73,7 +73,7 @@ export function inferAssetFromName(name: string): InferredAsset | null {
 export function createDefaultEntranceConfig(name: string): EntranceConfig {
   const inferred = inferAssetFromName(name);
   if (!inferred) {
-    throw new Error(`Unsupported entrance asset "${name}". Use PNG or MP4.`);
+    throw new Error(`Unsupported entrance asset "${name}". Use MP4 or PNG.`);
   }
 
   const path = normalizeAssetPath(name);

@@ -1,6 +1,6 @@
 # EntranceKit
 
-EntranceKit turns a local PNG or MP4 into a self-contained React app entrance.
+EntranceKit turns a local MP4 or PNG into a self-contained React app entrance.
 
 Use the builder to upload an asset, tune the open, hold/play, reveal, and teardown
 timeline, preview it over a mock app shell, and copy one ready `AppEntrance.tsx`
@@ -11,8 +11,8 @@ show-once behavior, and inline styles.
 ## What It Generates
 
 - A copyable, self-contained `AppEntrance.tsx` component.
-- PNG output backed by a native `<img>`.
 - MP4 output backed by a native `<video>`.
+- PNG output backed by a native `<img>`.
 - Separate opening and reveal controls.
 - Reduced-motion handling, skip control, timeout fallback, asset error fallback,
   optional show-once behavior, and clean teardown.

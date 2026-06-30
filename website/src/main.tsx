@@ -63,7 +63,7 @@ export function App() {
     config: createDefaultEntranceConfig('launch.png'),
     previewUrl: null,
     uploadedName: null,
-    status: 'Sample PNG loaded',
+    status: 'Sample asset loaded',
   }));
   const [previewRun, setPreviewRun] = useState(0);
   const [previewHost, setPreviewHost] = useState<HTMLDivElement | null>(null);
@@ -105,7 +105,7 @@ export function App() {
     if (!file) return;
     const inferred = inferAssetFromName(file.name);
     if (!inferred) {
-      setState((current) => ({ ...current, status: 'Use a PNG or MP4 file' }));
+      setState((current) => ({ ...current, status: 'Use an MP4 or PNG file' }));
       return;
     }
 
@@ -134,7 +134,7 @@ export function App() {
         return (
           <ControlSection title="Asset">
             <label className="upload" htmlFor="assetInput">
-              <span className="upload__title">PNG or MP4</span>
+              <span className="upload__title">MP4 or PNG</span>
               <span className="upload__meta" data-testid="asset-status">
                 {state.status}
               </span>
@@ -142,7 +142,7 @@ export function App() {
                 id="assetInput"
                 data-testid="asset-input"
                 type="file"
-                accept=".png,.mp4,image/png,video/mp4"
+                accept=".mp4,.png,video/mp4,image/png"
                 onChange={onAssetUpload}
               />
             </label>
@@ -359,7 +359,7 @@ export function App() {
       <header className="builder-topbar">
         <div className="brand" aria-label="EntranceKit">
           <span className="brand__mark" />
-          <span>EntranceKit Builder</span>
+          <span>EntranceKit</span>
         </div>
         <div className="topbar-meta">
           <span>{state.config.asset.kind.toUpperCase()}</span>

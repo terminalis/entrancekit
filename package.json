@@ -1,7 +1,7 @@
 {
   "name": "entrancekit",
   "private": true,
-  "description": "Build a self-contained React app entrance component from a local PNG or MP4 asset.",
+  "description": "Build a self-contained React app entrance component from a local MP4 or PNG asset.",
   "keywords": [
     "react",
     "animation",
