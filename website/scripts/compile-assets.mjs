@@ -115,7 +115,7 @@ const manifest = {
   name: 'EntranceKit',
   short_name: 'EntranceKit',
   description:
-    'Build a local React app entrance from a PNG or MP4 asset and copy a self-contained AppEntrance component.',
+    'Build a local React app entrance from an MP4 or PNG asset and copy a self-contained AppEntrance component.',
   start_url: './',
   scope: './',
   display: 'standalone',
@@ -158,7 +158,7 @@ const ogImage = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" 
   </g>
   <circle cx="932" cy="414" r="92" fill="url(#accent)" opacity=".18" />
   <text x="128" y="238" fill="#f7f4ee" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="82" font-weight="800">EntranceKit</text>
-  <text x="132" y="310" fill="#b8c0cc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Turn a PNG or MP4 into a self-contained app entrance.</text>
+  <text x="132" y="310" fill="#b8c0cc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">Turn an MP4 or PNG into a self-contained app entrance.</text>
   <text x="132" y="386" fill="#f7f4ee" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Upload. Tune. Preview. Copy AppEntrance.tsx.</text>
 </svg>
 `;
