@@ -30,10 +30,10 @@
     "node": ">=18.18"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && tsc -p tsconfig.build.json",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint .",
+    "lint": "oxlint . --deny-warnings",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "vitest run",
@@ -41,7 +41,6 @@
     "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
@@ -49,16 +48,13 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
     "@vitest/coverage-v8": "^4.1.10",
-    "eslint": "^10.7.0",
-    "eslint-config-prettier": "^10.1.8",
-    "globals": "^17.7.0",
     "jsdom": "^29.1.1",
+    "oxlint": "^1.74.0",
     "prettier": "^3.9.5",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "tsup": "^8.5.1",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.63.0",
+    "typescript": "^7.0.2",
     "vitest": "^4.1.8"
   },
   "overrides": {
